@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:id="@+id/constraintlayout"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="8dp">
+
+	<LinearLayout
+		android:id="@+id/linearlayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="8dp"
+		android:gravity="center">
+
+		<LinearLayout
+			android:id="@+id/linearlayout1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="8dp"
+			android:gravity="center">
+
+			<TextView
+				android:id="@+id/textview"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@string/app_name"
+				android:textSize="22sp" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/linearlayout2"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="8dp"
+			android:gravity="center">
+
+			<Button
+				android:id="@+id/wm"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="-" />
+
+			<EditText
+				android:id="@+id/w"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:hint="Enter your weight (kgs)"
+				android:inputType="number"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="12dp" />
+
+			<Button
+				android:id="@+id/wp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="+" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/linearlayout3"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="8dp"
+			android:gravity="center">
+
+			<Button
+				android:id="@+id/hm"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="-" />
+
+			<EditText
+				android:id="@+id/h"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:hint="Enter your height (mts)"
+				android:inputType="number"
+				android:layout_marginLeft="12dp"
+				android:layout_marginRight="12dp" />
+
+			<Button
+				android:id="@+id/hp"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="+" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/linearlayout5"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="8dp"
+			android:gravity="center">
+
+			<TextView
+				android:id="@+id/result"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="" />
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:id="@+id/linearlayout4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:padding="8dp"
+			android:gravity="center">
+
+			<Button
+				android:id="@+id/calcBtn"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Calculate" />
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
